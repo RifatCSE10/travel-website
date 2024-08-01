@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+  width: 1170px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar .logo .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .logo h3 {
+  font-family: Mulish;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.navbar .logo #text-color {
+  color: rgb(255, 84, 0);
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks .navitem .navlink {
+  text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-family: Mulish;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0%;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  transition: 0.3s all;
+}
+
+#active {
+  color: rgb(255, 84, 0);
+}
+
+.navlinks .navitem .navlink:hover {
+  color: rgb(255, 84, 0);
+}
+
+.banner-container {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8),
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner.png");
+  height: 500px;
+  background-size: 100%, 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-container h1,
+p {
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+.banner-container h1 {
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0%;
+}
+
+.banner-container p {
+  margin-top: 24px;
+  color: rgb(255, 255, 255);
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.input-box {
+  width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -30%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.input-box input {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+.input-box button {
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
